@@ -362,7 +362,6 @@ int	main(int argc, CHAR *argv[])
     MatrixCopy(vtrans, View.vtrans);
     MatrixInverse(Vinv, vtrans);
     MatrixCopy(View.vtransInv, Vinv);
-    MatrixInit(4);
 
     /*
      *	Print out what we have so far.
