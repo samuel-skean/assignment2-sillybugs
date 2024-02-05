@@ -768,9 +768,6 @@ UINT	empty_masks[sizeof(UINT)*8];
 UINT	nonempty_masks[sizeof(UINT)*8];
 #define GBSZ (1<<30)
 #define PGSZ (1<<12)
-volatile char *gbm;
-#define gb for(int g=0;g<10;g++){gbm=calloc(1,GBSZ);for(int i=0;i<GBSZ;i+=PGSZ) gbm[i]=i;free(gbm);}int gb
-
 
 /*
  *	Function prototypes.
